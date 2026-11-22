@@ -105,4 +105,9 @@ From the last full run of `lean/scripts/verify_all.sh` (logs in `lean/logs/verif
 | `lake check --paranoid` (312,655 declarations) | **failed**: five checkers accept, nanoda was killed for lack of memory (exit 137) |
 | negative controls | both rejected as expected |
 
-Bubblewrap was not available where the code was written, so no sandboxed run was made there. The [CI workflow](.github/workflows/ci.yml) runs all checks sandboxed on GitHub Actions.
+Bubblewrap was not available where the code was written, so no sandboxed run was made there.
+
+**Sandboxed runs elsewhere (22 November 2026).**
+
+* **Palomar.** Commit `aa5681a` of the branch `palomar` (the same Lean files as `lean/`) was submitted to Palomar. Palomar's sandboxed verification, which runs `lake comparator` with Lean's kernel and the nanoda replay, [completed successfully](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900).
+* **GitHub Actions.** The [CI workflow](.github/workflows/ci.yml) built the project and passed the static checks and the axiom audit. In the sandboxed verification job the runner was shut down during `lake check --paranoid` on the whole export (312,655 declarations), the step where nanoda also ran out of memory locally, and no logs were uploaded. So that job gives no result for its steps.

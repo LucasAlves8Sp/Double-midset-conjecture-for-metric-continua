@@ -1,6 +1,7 @@
 # The Double Midset Conjecture for Metric Continua
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24447757.svg)](https://doi.org/10.5281/zenodo.24447757)
+[![Hexagon](https://img.shields.io/badge/hexagon-2611.00899_(in_moderation)-9ca3af.svg)](https://hexagonmath.org/)
 [![Lean 4](https://img.shields.io/badge/Lean_4-all_results_of_Sections_2--12_formalized-2f6f4f.svg)](lean/)
 
 **Lucas Alves de Almeida** (independent researcher)
@@ -11,7 +12,9 @@
 | --- | --- |
 | Paper (PDF) | [`paper/double-midset-conjecture.pdf`](paper/double-midset-conjecture.pdf) |
 | Zenodo | [doi:10.5281/zenodo.24447758](https://doi.org/10.5281/zenodo.24447758) (all versions: [10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757)), published 22 November 2026 |
+| Hexagon preprint | hexagon:2611.00899v1 [math.GN], submitted 22 November 2026, awaiting moderation |
 | Lean formalization | [`lean/`](lean/); 47 statements compared by Comparator, main theorem `DoubleMidset.Paper.theorem_A` |
+| Palomar | submission of commit [`aa5681a`](https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua/tree/aa5681a7c48f59e8eb59b492989781ddd79ea98b) (branch [`palomar`](https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua/tree/palomar)), 22 November 2026; Palomar's sandboxed mechanical verification [completed successfully](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900); automated review pending; not yet registered |
 | Review and verification | [`REVIEW_AND_VERIFICATION.md`](REVIEW_AND_VERIFICATION.md) |
 | AI disclosure | [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) |
 
@@ -72,8 +75,9 @@ where `HasDMP X` means `(midset a b).encard = 2` for all `a ≠ b`, `midset a b 
 | Palomar-style run with nanoda and con-ron as external kernels | accepted (unsandboxed) |
 | `lake check --paranoid` on the whole project export | five checkers accept; nanoda ran out of memory in the 8 GB workspace (exit 137), so this step is recorded as failed |
 | negative controls (a `sorry` in `Solution.lean`; an altered definition in `Challenge.lean`) | both rejected, as they should be |
+| Palomar's mechanical verification (sandboxed, Lean kernel and nanoda) | [passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900) on 22 November 2026 |
 
-The sandboxed form of these checks needs bubblewrap, which was not available where the code was written; the [CI workflow](.github/workflows/ci.yml) runs them sandboxed on GitHub Actions.
+The local runs were unsandboxed, because bubblewrap was not available where the code was written. Palomar's verification above is the sandboxed Comparator run. The [CI workflow](.github/workflows/ci.yml) runs the whole suite sandboxed on GitHub Actions; its first complete attempt (22 November 2026) built the project and passed the static checks and the axiom audit, but the runner was shut down during `lake check --paranoid` on the whole export, so that run gives no result for the later steps.
 
 ## Building
 
@@ -92,7 +96,7 @@ bash scripts/verify_all.sh           # every check, logs in logs/verify-*/
 
 ## How to cite
 
-Lucas Alves de Almeida, *The Double Midset Conjecture for Metric Continua*, preprint, Zenodo, 2026. [doi:10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757).
+Lucas Alves de Almeida, *The Double Midset Conjecture for Metric Continua*, preprint, Zenodo, 2026. [doi:10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757). Also submitted to Hexagon as hexagon:2611.00899v1 (in moderation).
 
 The concept DOI above always resolves to the latest version.
 

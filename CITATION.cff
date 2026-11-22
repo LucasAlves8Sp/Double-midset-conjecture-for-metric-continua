@@ -14,6 +14,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.24447758
     description: "Zenodo, version 1"
+  - type: other
+    value: "hexagon:2611.00899v1"
+    description: "Hexagon preprint (submitted 22 November 2026, in moderation)"
 version: v1
 date-released: 2026-11-22
 license: CC-BY-4.0

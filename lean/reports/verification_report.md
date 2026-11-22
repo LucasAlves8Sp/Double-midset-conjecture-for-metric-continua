@@ -80,3 +80,14 @@ were updated in comments only: the module docstrings of `Challenge.lean`, `Solut
 After the change: `lake build` and `lake build Challenge` passed, the static source checks
 passed, and Comparator (unsandboxed, NanoDa and the Lean kernel) accepted all 47 theorems. The
 full `verify_all.sh` run was not repeated on this hash.
+
+## Addendum — sandboxed runs elsewhere (2026-11-22)
+
+- **Palomar.** Commit `aa5681a` of the branch `palomar` (these Lean files at the repository
+  root, with `formalization.yaml` citing the paper's Zenodo DOI) was submitted to Palomar. Its
+  sandboxed mechanical verification (`lake comparator`, Lean's kernel and the nanoda replay)
+  completed successfully: PalomarRegistry/PalomarSubmission run 45061350900.
+- **GitHub Actions** (run 45061255905 on `main`). The build job passed: static checks, build,
+  `Challenge`, axiom audit. In the sandboxed verification job the runner received a shutdown
+  signal during step 05 (`lake check --paranoid` on the whole export) after 14 minutes, and no
+  logs artifact was uploaded. So that job establishes nothing about steps 03–09.
