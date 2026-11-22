@@ -12,8 +12,8 @@ change to any Lean file.
 | **Lean build passed** | **yes**: clean rebuild of the library, `Solution` and `Challenge`; no `sorry` outside `Challenge.lean` |
 | **Comparator passed** | **yes, unsandboxed only**, all 47 statements. bubblewrap is not installed in the workspace, so every Comparator run used `--inadvisably-no-sandbox`. No sandboxed run has happened. |
 | **Independent kernel checks passed** | **not fully**: see the table below |
-| **Locally prepared for submission** | **no**: there is no commit and no remote, and no sandboxed run has been made on the commit to be submitted |
-| **Registered by Palomar** | **no**: nothing has been pushed or submitted |
+| **Locally prepared for submission** | at the time of the run, no; later pushed and submitted (see the addenda) |
+| **Registered by Palomar** | **yes**, after this report was first written: PALOMAR-2026-11-22-000025 v1 (see the addendum) |
 
 Results of the independent kernel checks:
 
@@ -86,7 +86,9 @@ full `verify_all.sh` run was not repeated on this hash.
 - **Palomar.** Commit `aa5681a` of the branch `palomar` (these Lean files at the repository
   root, with `formalization.yaml` citing the paper's Zenodo DOI) was submitted to Palomar. Its
   sandboxed mechanical verification (`lake comparator`, Lean's kernel and the nanoda replay)
-  completed successfully: PalomarRegistry/PalomarSubmission run 45061350900.
+  completed successfully: PalomarRegistry/PalomarSubmission run 45061350900. Palomar's
+  automated review (AI, `codex:gpt-6-sol`) identified no problems, and the result was registered
+  on 2026-11-22 as PALOMAR-2026-11-22-000025 v1.
 - **GitHub Actions** (run 45061255905 on `main`). The build job passed: static checks, build,
   `Challenge`, axiom audit. In the sandboxed verification job the runner received a shutdown
   signal during step 05 (`lake check --paranoid` on the whole export) after 14 minutes, and no

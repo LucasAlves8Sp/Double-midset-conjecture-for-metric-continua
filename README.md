@@ -1,20 +1,21 @@
 # The Double Midset Conjecture for Metric Continua
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24447757.svg)](https://doi.org/10.5281/zenodo.24447757)
-[![Hexagon](https://img.shields.io/badge/hexagon-2611.00899_(in_moderation)-9ca3af.svg)](https://hexagonmath.org/)
+[![Hexagon](https://img.shields.io/badge/hexagon-2611.00899_(under_review)-9ca3af.svg)](https://hexagonmath.org/)
+[![Palomar](https://img.shields.io/badge/Palomar-PALOMAR--2026--11--22--000025_v1-1d4ed8.svg)](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1)
 [![Lean 4](https://img.shields.io/badge/Lean_4-all_results_of_Sections_2--12_formalized-2f6f4f.svg)](lean/)
 
 **Lucas Alves de Almeida** (independent researcher)
 
-**Main result.** Let $(X,d)$ be a nondegenerate compact connected metric space in which every two distinct points have exactly two equidistant points (the *double midset property*, DMP). Then **$X$ is homeomorphic to a circle**. This settles the double midset conjecture of Loveland and Wayment (1974) with no assumption on the metric beyond compatibility with the topology. Consequently, a metrizable continuum admits a compatible metric with the DMP if and only if it is a simple closed curve. **Every result of Sections 2–12 of the paper is formalized in Lean 4 with Mathlib**; the examples, figures, remarks and the questions of Section 13 are not.
+**Main result.** Let $(X,d)$ be a nondegenerate compact connected metric space in which every two distinct points have exactly two equidistant points (the *double midset property*, DMP). Then **$X$ is homeomorphic to a circle**. This settles the double midset conjecture of Loveland and Wayment (1974) with no assumption on the metric beyond compatibility with the topology. Consequently, a metrizable continuum admits a compatible metric with the DMP if and only if it is a simple closed curve. **Every result of Sections 2–12 of the paper is formalized in Lean 4 with Mathlib**; the examples, figures, remarks and the questions of Section 13 are not. The formalization is registered in the [Palomar registry](https://palomar-registry.org/) of Lean-verified mathematics as [PALOMAR-2026-11-22-000025](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1).
 
 | | |
 | --- | --- |
 | Paper (PDF) | [`paper/double-midset-conjecture.pdf`](paper/double-midset-conjecture.pdf) |
 | Zenodo | [doi:10.5281/zenodo.24447758](https://doi.org/10.5281/zenodo.24447758) (all versions: [10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757)), published 22 November 2026 |
-| Hexagon preprint | hexagon:2611.00899v1 [math.GN], submitted 22 November 2026, awaiting moderation |
+| Hexagon preprint | hexagon:2611.00899v1 [math.GN], submitted 22 November 2026, under review by Hexagon's moderators |
 | Lean formalization | [`lean/`](lean/); 47 statements compared by Comparator, main theorem `DoubleMidset.Paper.theorem_A` |
-| Palomar | submission of commit [`aa5681a`](https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua/tree/aa5681a7c48f59e8eb59b492989781ddd79ea98b) (branch [`palomar`](https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua/tree/palomar)), 22 November 2026; Palomar's sandboxed mechanical verification [completed successfully](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900); automated review pending; not yet registered |
+| Palomar | [PALOMAR-2026-11-22-000025 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1): submission of commit [`aa5681a`](https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua/tree/aa5681a7c48f59e8eb59b492989781ddd79ea98b) (branch [`palomar`](https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua/tree/palomar)), 22 November 2026; Palomar's sandboxed mechanical verification [completed successfully](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900); automated review: no problems identified. **Registered** on 22 November 2026 as [PALOMAR-2026-11-22-000025 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1) |
 | Review and verification | [`REVIEW_AND_VERIFICATION.md`](REVIEW_AND_VERIFICATION.md) |
 | AI disclosure | [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) |
 
@@ -96,7 +97,9 @@ bash scripts/verify_all.sh           # every check, logs in logs/verify-*/
 
 ## How to cite
 
-Lucas Alves de Almeida, *The Double Midset Conjecture for Metric Continua*, preprint, Zenodo, 2026. [doi:10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757). Also submitted to Hexagon as hexagon:2611.00899v1 (in moderation).
+Lucas Alves de Almeida, *The Double Midset Conjecture for Metric Continua*, preprint, Zenodo, 2026. [doi:10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757). Also submitted to Hexagon as hexagon:2611.00899v1 (under review).
+
+To cite the registered Lean formalization: Lucas Alves de Almeida, *The Double Midset Conjecture for Metric Continua*, Palomar, [PALOMAR-2026-11-22-000025 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1), 2026.
 
 The concept DOI above always resolves to the latest version.
 
@@ -114,8 +117,16 @@ The concept DOI above always resolves to the latest version.
   doi       = {10.5281/zenodo.24447757},
   url       = {https://doi.org/10.5281/zenodo.24447757}
 }
+
+@misc{palomar-2026-11-22-000025-v1,
+  author       = {{Lucas Alves de Almeida}},
+  title        = {{The Double Midset Conjecture for Metric Continua}},
+  year         = {2026},
+  howpublished = {Palomar, PALOMAR-2026-11-22-000025 v1},
+  url          = {https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1}
+}
 ```
 
 ## Status
 
-No independent expert has yet verified the proofs, and no human has yet compared the Lean statements with the paper; that comparison has been made only by AI agents (see `lean/reports/reviews/`). The work was done with extensive AI assistance; see [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
+No independent expert has yet verified the proofs, and no human has yet compared the Lean statements with the paper; that comparison has been made only by AI agents (see `lean/reports/reviews/`). The formalization is registered in Palomar as PALOMAR-2026-11-22-000025: Palomar's sandboxed verification passed, and its automated review (an AI review, model `codex:gpt-6-sol`, not human peer review) identified no problems with the statements, definitions, presentation, literature account or research interest. The work was done with extensive AI assistance; see [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).

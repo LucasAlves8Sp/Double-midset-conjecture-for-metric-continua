@@ -10,6 +10,7 @@ This file records the coverage of the paper by the Lean formalization, how the f
 * **Not formalized.** The examples, the figures, the remarks and the questions of Section 13 (including the $(n-1)$-sphere midset conjecture). R. L. Moore's theorem behind Fact 2.5 is formalized only in the consequence the paper uses: a dendrite without branch points is an arc.
 * **Classical facts proved along the way** (not in Mathlib): arcs in Peano continua, uniform local connectedness, boundary bumping (`lean/DoubleMidset/Classical/`).
 * **The formalization found no mathematical gap** in the paper.
+* **Palomar.** Registered as [PALOMAR-2026-11-22-000025 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1) on 22 November 2026, from commit `aa5681a` (branch `palomar`).
 * **Not yet done.** No human has refereed the paper, and no human has compared the Lean statements with the paper. That comparison needs only `lean/Challenge.lean` and the paper.
 
 **What one must trust:** the Lean kernel; Mathlib's definitions of the objects in the statements (metric spaces, `CompactSpace`, `ConnectedSpace`, `Set.encard`, `Homeomorph`, `Circle`); and the definitions at the top of `lean/Challenge.lean` (`midset`, `HasDMP`, `MidsetsAtMostTwo`, arcs, dendrites, finite trees and their edges, crossings and touches, and the other notions of Sections 2–9). Theorem A itself depends only on `midset` and `HasDMP`, which are one-line definitions.
@@ -109,5 +110,5 @@ Bubblewrap was not available where the code was written, so no sandboxed run was
 
 **Sandboxed runs elsewhere (22 November 2026).**
 
-* **Palomar.** Commit `aa5681a` of the branch `palomar` (the same Lean files as `lean/`) was submitted to Palomar. Palomar's sandboxed verification, which runs `lake comparator` with Lean's kernel and the nanoda replay, [completed successfully](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900).
+* **Palomar.** Commit `aa5681a` of the branch `palomar` (the same Lean files as `lean/`) was submitted to Palomar. Palomar's sandboxed verification, which runs `lake comparator` with Lean's kernel and the nanoda replay, [completed successfully](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900). Palomar's automated review (an AI review by `codex:gpt-6-sol`, not human) identified no problems, and the result was **registered on 22 November 2026 as [PALOMAR-2026-11-22-000025 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-22-000025&version=1)**.
 * **GitHub Actions.** The [CI workflow](.github/workflows/ci.yml) built the project and passed the static checks and the axiom audit. In the sandboxed verification job the runner was shut down during `lake check --paranoid` on the whole export (312,655 declarations), the step where nanoda also ran out of memory locally, and no logs were uploaded. So that job gives no result for its steps.
