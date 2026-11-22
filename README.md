@@ -1,5 +1,6 @@
 # The Double Midset Conjecture for Metric Continua
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24447757.svg)](https://doi.org/10.5281/zenodo.24447757)
 [![Lean 4](https://img.shields.io/badge/Lean_4-all_results_of_Sections_2--12_formalized-2f6f4f.svg)](lean/)
 
 **Lucas Alves de Almeida** (independent researcher)
@@ -9,6 +10,7 @@
 | | |
 | --- | --- |
 | Paper (PDF) | [`paper/double-midset-conjecture.pdf`](paper/double-midset-conjecture.pdf) |
+| Zenodo | [doi:10.5281/zenodo.24447758](https://doi.org/10.5281/zenodo.24447758) (all versions: [10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757)), published 22 November 2026 |
 | Lean formalization | [`lean/`](lean/); 47 statements compared by Comparator, main theorem `DoubleMidset.Paper.theorem_A` |
 | Review and verification | [`REVIEW_AND_VERIFICATION.md`](REVIEW_AND_VERIFICATION.md) |
 | AI disclosure | [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) |
@@ -90,7 +92,25 @@ bash scripts/verify_all.sh           # every check, logs in logs/verify-*/
 
 ## How to cite
 
-Lucas Alves de Almeida, *The Double Midset Conjecture for Metric Continua*, preprint, 2026, https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua.
+Lucas Alves de Almeida, *The Double Midset Conjecture for Metric Continua*, preprint, Zenodo, 2026. [doi:10.5281/zenodo.24447757](https://doi.org/10.5281/zenodo.24447757).
+
+The concept DOI above always resolves to the latest version.
+
+| Version | Content | DOI |
+| --- | --- | --- |
+| v1 | paper (PDF), 22 November 2026 | [10.5281/zenodo.24447758](https://doi.org/10.5281/zenodo.24447758) |
+
+```bibtex
+@misc{AlvesdeAlmeida2026doublemidset,
+  author    = {Alves de Almeida, Lucas},
+  title     = {The Double Midset Conjecture for Metric Continua},
+  year      = {2026},
+  publisher = {Zenodo},
+  note      = {Preprint},
+  doi       = {10.5281/zenodo.24447757},
+  url       = {https://doi.org/10.5281/zenodo.24447757}
+}
+```
 
 ## Status
 
