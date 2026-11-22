@@ -1,0 +1,34 @@
+{
+  "title": "The Double Midset Conjecture for Metric Continua",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p>Let (<i>X</i>,<i>d</i>) be a nondegenerate compact connected metric space such that, for any two distinct points <i>a</i>,<i>b</i> of <i>X</i>, exactly two points of <i>X</i> are equidistant from <i>a</i> and <i>b</i>. We prove that <i>X</i> is homeomorphic to a circle. This settles the double midset conjecture of Loveland and Wayment from 1974. It was previously known for plane continua with the Euclidean metric and under additional convexity or continuity hypotheses. No assumption on the metric is made beyond compatibility with the topology. We first show that a counterexample would be a finite tree. On a finite tree, a parity count of the sign changes of <i>d</i>(·,<i>a</i>)−<i>d</i>(·,<i>b</i>), combined with a Baire category argument, forces whole intervals onto metric spheres. This rigidity is incompatible with a branch point and with an arc. The results of the paper are formalized in Lean 4.</p><p><b>Lean formalization.</b> Every definition, lemma, proposition, corollary and theorem of Sections 2–12 (47 statements, including Theorems A, B and C) is proved in Lean 4 (v4.35.0-rc2) with Mathlib, using only Lean's standard axioms; the examples, remarks and the questions of Section 13 are not formalized. Code: https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua (folder lean/).</p><p><b>Status.</b> Preprint; no independent expert has yet verified the proofs. Developed with extensive AI assistance (Claude Opus 5.5, ChatGPT Astra 6.2, ChatGPT Sol 6.1); see the disclosure in the paper.</p>",
+  "creators": [
+    {
+      "name": "Alves de Almeida, Lucas",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "keywords": [
+    "midset",
+    "equidistant set",
+    "double midset property",
+    "metric continuum",
+    "dendrite",
+    "finite tree",
+    "simple closed curve",
+    "Lean 4",
+    "formalization"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "notes": "Not yet independently peer reviewed. Mathematics Subject Classification 2020: Primary 54F15, 54E35; Secondary 54F50, 51K05.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ]
+}

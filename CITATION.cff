@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The Double Midset Conjecture for Metric Continua"
+type: article
+authors:
+  - family-names: "Alves de Almeida"
+    given-names: "Lucas"
+    affiliation: "Independent researcher"
+version: v1
+date-released: 2026-11-22
+license: CC-BY-4.0
+repository-code: "https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua"
+keywords:
+  - midset
+  - equidistant set
+  - double midset property
+  - metric continuum
+  - dendrite
+  - finite tree
+  - simple closed curve
+  - Lean 4

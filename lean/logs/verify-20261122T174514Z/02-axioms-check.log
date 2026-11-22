@@ -1,0 +1,2 @@
+declarations audited: 47 (expected 47)
+all audited declarations use only propext, Quot.sound, Classical.choice

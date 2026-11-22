@@ -1,0 +1,1388 @@
+WARNING: Sandbox disabled, this run is not trustworthy.
+Resolving dependencies
+⚠ [1965/2062] Replayed DoubleMidset.Classical.ArcMinimal
+warning: DoubleMidset/Classical/ArcMinimal.lean:33:0: automatically included section variable(s) unused in theorem `DoubleMidset.Arc.adm_Icc`:
+  [TopologicalSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Classical/ArcMinimal.lean:58:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/Classical/ArcMinimal.lean:146:50: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/Classical/ArcMinimal.lean:175:33: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/Classical/ArcMinimal.lean:139:0: automatically included section variable(s) unused in theorem `DoubleMidset.Arc.Minimal.gap_of_eq`:
+  [TopologicalSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1977/2062] Replayed DoubleMidset.Classical.ArcParam
+warning: DoubleMidset/Classical/ArcParam.lean:65:0: automatically included section variable(s) unused in theorem `DoubleMidset.Arc.not_Rt_of_Lt`:
+  [TopologicalSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Classical/ArcParam.lean:107:51: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/Classical/ArcParam.lean:170:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/Classical/ArcParam.lean:171:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/Classical/ArcParam.lean:174:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/Classical/ArcParam.lean:178:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/Classical/ArcParam.lean:181:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/Classical/ArcParam.lean:296:28: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: DoubleMidset/Classical/ArcParam.lean:345:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/Classical/ArcParam.lean:90:0: automatically included section variable(s) unused in theorem `DoubleMidset.Arc.exists_injective`:
+  [T2Space X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [T2Space X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1979/2062] Replayed DoubleMidset.Arc
+warning: DoubleMidset/Arc.lean:87:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsArcParam.symm_image`:
+  [TopologicalSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: DoubleMidset/Arc.lean:121:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: DoubleMidset/Arc.lean:106:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsArcParam.sub_image`:
+  [TopologicalSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Arc.lean:119:6: Unused tactic linter: `congr 1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DoubleMidset/Arc.lean:142:35: Variable name `g` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _g
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/Arc.lean:187:76: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Arc.lean:187:0: automatically included section variable(s) unused in theorem `DoubleMidset.concat_of_le`:
+  [TopologicalSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Arc.lean:190:2: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Arc.lean:189:0: automatically included section variable(s) unused in theorem `DoubleMidset.concat_of_lt`:
+  [TopologicalSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2081/2192] Replayed DoubleMidset.Circle
+warning: DoubleMidset/Circle.lean:149:16: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Circle.lean:151:66: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [2091/2192] Replayed DoubleMidset.Dendrite
+warning: DoubleMidset/Dendrite.lean:60:11: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Dendrite.lean:85:11: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Dendrite.lean:104:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Dendrite.lean:105:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Dendrite.lean:201:0: automatically included section variable(s) unused in theorem `DoubleMidset.sides_separate`:
+  [ConnectedSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ConnectedSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Dendrite.lean:262:32: Variable name `p` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _p
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/Dendrite.lean:262:37: Variable name `q` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _q
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/Dendrite.lean:267:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsSimpleClosedCurve.image_val`:
+  [CompactSpace X]
+  [ConnectedSpace X]
+  [LocallyConnectedSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace X] [ConnectedSpace X] [LocallyConnectedSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2092/2192] Replayed DoubleMidset.Order
+warning: DoubleMidset/Order.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [2093/2192] Replayed DoubleMidset.NoBranch
+warning: DoubleMidset/NoBranch.lean:44:0: automatically included section variable(s) unused in theorem `DoubleMidset.noRelBranch_univ`:
+  [CompactSpace X]
+  [ConnectedSpace X]
+  [LocallyConnectedSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace X] [ConnectedSpace X] [LocallyConnectedSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/NoBranch.lean:45:10: Variable name `z` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _z
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/NoBranch.lean:45:14: Variable name `p` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _p
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/NoBranch.lean:45:18: Variable name `q` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _q
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/NoBranch.lean:60:64: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/NoBranch.lean:132:0: automatically included section variable(s) unused in theorem `DoubleMidset.phi_summable`:
+  [ConnectedSpace X]
+  [LocallyConnectedSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ConnectedSpace X] [LocallyConnectedSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/NoBranch.lean:160:0: automatically included section variable(s) unused in theorem `DoubleMidset.infDist_le_add_of_forall`:
+  [CompactSpace X]
+  [ConnectedSpace X]
+  [LocallyConnectedSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace X] [ConnectedSpace X] [LocallyConnectedSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2137/2192] Replayed DoubleMidset.TreeStructure
+warning: DoubleMidset/TreeStructure.lean:46:0: automatically included section variable(s) unused in theorem `DoubleMidset.isOpen_bcomp`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:50:0: automatically included section variable(s) unused in theorem `DoubleMidset.bcomp_subset`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:53:0: automatically included section variable(s) unused in theorem `DoubleMidset.mem_bcomp`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:56:0: automatically included section variable(s) unused in theorem `DoubleMidset.isPreconnected_bcomp`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:71:0: automatically included section variable(s) unused in theorem `DoubleMidset.bcomp_eq`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:140:0: automatically included section variable(s) unused in theorem `DoubleMidset.noRelBranch_closure_bcomp`:
+  hD
+  hBf
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hD hBf in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:159:0: automatically included section variable(s) unused in theorem `DoubleMidset.end_mem_closure_left`:
+  hD
+  hBf
+  hx
+  hab
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hD hBf hx hab in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:161:0: automatically included section variable(s) unused in theorem `DoubleMidset.end_mem_closure_right`:
+  hBf
+  hx
+  hab
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hBf hx hab in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:215:24: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/TreeStructure.lean:385:0: automatically included section variable(s) unused in theorem `DoubleMidset.branchSet_subset_vertices`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:389:0: automatically included section variable(s) unused in theorem `DoubleMidset.seg_diff_ends_eq`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:420:0: automatically included section variable(s) unused in theorem `DoubleMidset.cc_vertices_eq`:
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:555:73: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  mem_s̲diff
+warning: DoubleMidset/TreeStructure.lean:560:42: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/TreeStructure.lean:547:0: automatically included section variable(s) unused in theorem `DoubleMidset.dense_compl_finite`:
+  [CompactSpace T]
+  [LocallyConnectedSpace T]
+  hD
+  hBf
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [LocallyConnectedSpace T] hD hBf in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:608:0: automatically included section variable(s) unused in theorem `DoubleMidset.mem_cc_of_mem_closure`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/TreeStructure.lean:653:53: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/TreeStructure.lean:702:35: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  mem_s̲diff
+⚠ [2139/2192] Replayed DoubleMidset.Reduction
+warning: DoubleMidset/Reduction.lean:48:26: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Reduction.lean:99:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Reduction.lean:104:17: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Reduction.lean:240:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Reduction.lean:334:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2171/2192] Replayed DoubleMidset.Extrema
+warning: DoubleMidset/Extrema.lean:172:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Extrema.lean:178:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Extrema.lean:223:8: `Set.diff_eq` has been deprecated: Use `Set.sdiff_eq` instead
+
+Hint: Replace the deprecated name:
+  S̲e̲t̲.̲s̲diff_eq
+warning: DoubleMidset/Extrema.lean:225:8: `Set.diff_eq` has been deprecated: Use `Set.sdiff_eq` instead
+
+Hint: Replace the deprecated name:
+  S̲e̲t̲.̲s̲diff_eq
+warning: DoubleMidset/Extrema.lean:227:8: `Set.diff_eq` has been deprecated: Use `Set.sdiff_eq` instead
+
+Hint: Replace the deprecated name:
+  S̲e̲t̲.̲s̲diff_eq
+warning: DoubleMidset/Extrema.lean:229:8: `Set.diff_eq` has been deprecated: Use `Set.sdiff_eq` instead
+
+Hint: Replace the deprecated name:
+  S̲e̲t̲.̲s̲diff_eq
+warning: DoubleMidset/Extrema.lean:262:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Extrema.lean:271:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Extrema.lean:278:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Extrema.lean:210:75: Variable name `hE` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/Extrema.lean:211:5: Variable name `hF` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hF
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2173/2192] Replayed DoubleMidset.Branch
+warning: DoubleMidset/Branch.lean:48:0: automatically included section variable(s) unused in theorem `DoubleMidset.seg_diff_left_eq`:
+  [CompactSpace X]
+  [ConnectedSpace X]
+  [LocallyConnectedSpace X]
+  hD
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace X] [ConnectedSpace X] [LocallyConnectedSpace X] hD in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Branch.lean:114:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Branch.lean:145:67: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/Branch.lean:283:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Branch.lean:290:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Branch.lean:310:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Branch.lean:349:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Branch.lean:343:0: automatically included section variable(s) unused in theorem `DoubleMidset.exists_first_level`:
+  [CompactSpace X]
+  [ConnectedSpace X]
+  [LocallyConnectedSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace X] [ConnectedSpace X] [LocallyConnectedSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Branch.lean:507:0: automatically included section variable(s) unused in theorem `DoubleMidset.concat_half`:
+  [CompactSpace X]
+  [ConnectedSpace X]
+  [LocallyConnectedSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace X] [ConnectedSpace X] [LocallyConnectedSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Branch.lean:522:32: Variable name `z` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _z
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DoubleMidset/Branch.lean:622:0: automatically included section variable(s) unused in theorem `DoubleMidset.not_two_constant`:
+  hD
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hD in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Branch.lean:663:5: `ENat.coe_toNat` has been deprecated: Use `ENat.natCast_toNat` instead
+
+Hint: Replace the deprecated name:
+  E̵N̵a̵t̵.̵c̵o̵e̵_̵t̵o̵N̵a̵t̵E̲N̲a̲t̲.̲n̲a̲t̲C̲a̲s̲t̲_̲t̲o̲N̲a̲t̲
+warning: DoubleMidset/Branch.lean:706:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Branch.lean:748:8: `Set.ncard_diff_singleton_add_one` has been deprecated: Use `Set.ncard_sdiff_singleton_add_one` instead
+
+Hint: Replace the deprecated name:
+  ncard_s̲diff_singleton_add_one
+⚠ [2174/2192] Replayed DoubleMidset.Edges
+warning: DoubleMidset/Edges.lean:152:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Edges.lean:153:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Edges.lean:138:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsArcParam.image_Ioo_eq_diff`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Edges.lean:183:14: `ENat.coe_toNat` has been deprecated: Use `ENat.natCast_toNat` instead
+
+Hint: Replace the deprecated name:
+  E̵N̵a̵t̵.̵c̵o̵e̵_̵t̵o̵N̵a̵t̵E̲N̲a̲t̲.̲n̲a̲t̲C̲a̲s̲t̲_̲t̲o̲N̲a̲t̲
+warning: DoubleMidset/Edges.lean:196:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Edges.lean:198:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Edges.lean:242:28: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Edges.lean:347:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2175/2192] Replayed DoubleMidset.ParamParity
+warning: DoubleMidset/ParamParity.lean:34:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/ParamParity.lean:37:21: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/ParamParity.lean:42:21: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/ParamParity.lean:77:24: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/ParamParity.lean:83:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/ParamParity.lean:83:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/ParamParity.lean:84:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/ParamParity.lean:84:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/ParamParity.lean:93:41: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/ParamParity.lean:126:42: `Set.diff_singleton_ssubset` has been deprecated: Use `Set.sdiff_singleton_ssubset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_singleton_ssubset
+warning: DoubleMidset/ParamParity.lean:159:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/ParamParity.lean:184:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/ParamParity.lean:187:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/ParamParity.lean:187:36: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/ParamParity.lean:188:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/ParamParity.lean:188:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/ParamParity.lean:189:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/ParamParity.lean:193:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/ParamParity.lean:193:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/ParamParity.lean:194:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/ParamParity.lean:195:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [2176/2192] Replayed DoubleMidset.Crossing
+warning: DoubleMidset/Crossing.lean:76:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsCrossing.along`:
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Crossing.lean:108:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsTouch.along`:
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Crossing.lean:148:38: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset
+warning: DoubleMidset/Crossing.lean:141:0: automatically included section variable(s) unused in theorem `DoubleMidset.exists_isolated`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Crossing.lean:217:21: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Crossing.lean:281:21: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2177/2192] Replayed DoubleMidset.Parity
+warning: DoubleMidset/Parity.lean:34:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsEdgeParam.inter_vertices`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+  hT
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] hT in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Parity.lean:48:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsEdgeParam.mem_Ioo`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+  hT
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] hT in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Parity.lean:55:0: automatically included section variable(s) unused in theorem `DoubleMidset.isEdge_closure_cc`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+  hT
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] hT in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Parity.lean:60:0: automatically included section variable(s) unused in theorem `DoubleMidset.finite_paramZeros`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Parity.lean:85:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Parity.lean:94:10: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:98:10: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:106:24: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:106:36: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:123:8: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:164:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:166:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Parity.lean:170:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Parity.lean:174:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:177:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Parity.lean:179:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [2178/2192] Replayed DoubleMidset.Types
+warning: DoubleMidset/Types.lean:88:35: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Types.lean:89:4: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Types.lean:206:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Types.lean:209:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Types.lean:211:22: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Types.lean:300:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Types.lean:307:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Types.lean:340:52: `IsLocalExtr.on` has been deprecated: Use `IsLocalExtr.isLocalExtrOn` instead
+warning: DoubleMidset/Types.lean:341:53: `IsLocalExtr.on` has been deprecated: Use `IsLocalExtr.isLocalExtrOn` instead
+⚠ [2179/2192] Replayed DoubleMidset.Spherical
+warning: DoubleMidset/Spherical.lean:128:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Spherical.lean:215:0: automatically included section variable(s) unused in theorem `DoubleMidset.exists_rational_subarc`:
+  [Nontrivial T]
+  h2
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nontrivial T] h2 in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2180/2192] Replayed DoubleMidset.OddBox
+warning: DoubleMidset/OddBox.lean:36:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: DoubleMidset/OddBox.lean:67:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/OddBox.lean:114:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsOpenEdge.notMem_vertices`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/OddBox.lean:387:10: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/OddBox.lean:411:0: automatically included section variable(s) unused in theorem `DoubleMidset.mem_centers_of_const`:
+  [CompactSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/OddBox.lean:478:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/OddBox.lean:543:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsOpenArc.nonempty`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/OddBox.lean:602:0: automatically included section variable(s) unused in theorem `DoubleMidset.exists_sphericalArc_of_param`:
+  [CompactSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/OddBox.lean:680:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/OddBox.lean:684:28: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/OddBox.lean:685:28: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2181/2192] Replayed DoubleMidset.EdgeTools
+warning: DoubleMidset/EdgeTools.lean:51:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/EdgeTools.lean:55:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/EdgeTools.lean:71:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsArcParam.seg_image`:
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/EdgeTools.lean:257:38: `Set.diff_subset_iff` has been deprecated: Use `Set.sdiff_subset_iff` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_subset_iff
+warning: DoubleMidset/EdgeTools.lean:294:44: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: DoubleMidset/EdgeTools.lean:308:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/EdgeTools.lean:399:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2182/2192] Replayed DoubleMidset.Centers
+warning: DoubleMidset/Centers.lean:99:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:191:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:200:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:211:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Centers.lean:217:33: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:219:33: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:223:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Centers.lean:301:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:314:31: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: DoubleMidset/Centers.lean:320:51: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
+warning: DoubleMidset/Centers.lean:427:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:440:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:466:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Centers.lean:480:53: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: DoubleMidset/Centers.lean:506:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Centers.lean:512:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:516:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:521:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsTip.mem_oddVertices`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Centers.lean:610:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:621:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:678:50: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: DoubleMidset/Centers.lean:687:27: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: DoubleMidset/Centers.lean:718:37: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:719:37: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:721:16: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Centers.lean:726:32: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Centers.lean:737:16: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Centers.lean:741:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Centers.lean:762:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Centers.lean:763:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Centers.lean:806:0: automatically included section variable(s) unused in theorem `DoubleMidset.IsEdgeParam.symm`:
+  [CompactSpace T]
+  [ConnectedSpace T]
+  [LocallyConnectedSpace T]
+  [Nontrivial T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace T] [ConnectedSpace T] [LocallyConnectedSpace T] [Nontrivial T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Centers.lean:844:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:855:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:863:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:932:22: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Centers.lean:941:22: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2183/2192] Replayed DoubleMidset.Tips
+warning: DoubleMidset/Tips.lean:181:29: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Tips.lean:182:29: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Tips.lean:189:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Tips.lean:192:26: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Tips.lean:203:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Tips.lean:204:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Tips.lean:223:60: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: DoubleMidset/Tips.lean:248:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Tips.lean:250:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Tips.lean:251:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Tips.lean:253:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Tips.lean:279:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Tips.lean:284:27: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: DoubleMidset/Tips.lean:289:18: `IsLocalMin.on` has been deprecated: Use `IsLocalMin.isLocalMinOn` instead
+warning: DoubleMidset/Tips.lean:289:24: `IsMinFilter.isExtr` has been deprecated: Use `IsMinFilter.isExtrFilter` instead
+warning: DoubleMidset/Tips.lean:290:26: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: DoubleMidset/Tips.lean:295:18: `IsLocalMax.on` has been deprecated: Use `IsLocalMax.isLocalMaxOn` instead
+warning: DoubleMidset/Tips.lean:295:24: `IsMaxFilter.isExtr` has been deprecated: Use `IsMaxFilter.isExtrFilter` instead
+warning: DoubleMidset/Tips.lean:364:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2184/2192] Replayed DoubleMidset.Count
+warning: DoubleMidset/Count.lean:149:24: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Count.lean:370:43: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [2185/2192] Replayed DoubleMidset.Triod
+warning: DoubleMidset/Triod.lean:97:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Triod.lean:187:24: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Triod.lean:201:24: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/Triod.lean:180:0: automatically included section variable(s) unused in theorem `DoubleMidset.count_four`:
+  [MetricSpace T]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MetricSpace T] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Triod.lean:319:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2186/2192] Replayed DoubleMidset.ArcCase
+warning: DoubleMidset/ArcCase.lean:33:32: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/ArcCase.lean:118:35: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: DoubleMidset/ArcCase.lean:170:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [2187/2192] Replayed DoubleMidset.Main
+warning: DoubleMidset/Main.lean:31:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Main.lean:73:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DoubleMidset/Main.lean:164:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [2188/2192] Replayed DoubleMidset.Special
+warning: DoubleMidset/Special.lean:80:8: `Set.diff_singleton_eq_self` has been deprecated: Use `Set.sdiff_singleton_eq_self` instead
+
+Hint: Replace the deprecated name:
+  s̲diff_singleton_eq_self
+warning: DoubleMidset/Special.lean:105:0: automatically included section variable(s) unused in theorem `DoubleMidset.encard_pair_le'`:
+  [MetricSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MetricSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DoubleMidset/Special.lean:125:41: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Building and exporting
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+[anonymous]:thmDecl Submodule.pow_induction_on_left': lean4lean took 1597
+[anonymous]:thmDecl LinearMap.lTensor_tensor: lean4lean took 1799
+checked 312655 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel rejected the solution
+Running con-leche kernel on solution
+con-leche: 47 inductive blocks modelled in-process: Lean.Syntax, Lean.PersistentHashMap.Node, Lean.Meta.DiscrTree.Trie, Lean.PersistentArrayNode, Lean.PrefixTreeNode, Lean.Json, Lean.MessageData, Lean.Elab.InfoTree, Lean.Language.SnapshotTree, Lean.IR.IRType, Lean.Elab.Tactic.TacticParsedSnapshot, Lean.Meta.Grind.Arith.Linear.RingIneqCnstr, Lean.Meta.Grind.Arith.Linear.RingEqCnstr, Lean.Meta.Grind.Arith.Linear.RingDiseqCnstr, Lean.Meta.Grind.Arith.Linear.EqCnstr, Lean.Meta.Grind.Arith.CommRing.EqCnstr, Lean.Data.Trie, Lean.Doc.Inline, Lean.Doc.Block, Lean.Doc.Part, Lean.Level.PP.Result, Lean.Compiler.LCNF.Alt, Lean.Meta.Grind.Arith.Cutsat.EqCnstr, Lean.Language.Lean.CommandParsedSnapshot, Lean.AsyncList, Lean.Widget.TaggedText, Lean.Widget.MsgEmbed, Lean.Lsp.Ipc.ModuleHierarchy, ProofWidgets.Html, Aesop.IndexingMode, Lean.Elab.Term.Do.Code, Lean.Lsp.DocumentSymbol, Mathlib.Tactic.Translate.ArgReorder, Mathlib.Tactic.Ring.Common.ExBaseNat, Lean.Meta.Match.Pattern, Mathlib.Tactic.Ring.Common.ExBase, Lean.IR.Alt, Lean.Meta.Grind.AC.EqCnstr, Lean.Meta.Grind.AC.DiseqCnstr, Aesop.Frontend.RuleExpr, Lean.Parser.Tactic.MCasesPat, Aesop.Script.StepTree, Lean.Elab.Tactic.RCases.RCasesPatt, Lean.Lsp.Ipc.CallHierarchy, Lean.Meta.Match.Example, Lean.Parser.Tactic.MRefinePat, _private.Lean.Elab.ConfigEval.DeriveEvalConfigItem.0.Lean.Elab.ConfigEval.HandlerTrie (2044 generated records, checked by the fold as declarations and not counted as records of the file)
+con-leche: 62 projection functions of non-direct structure-likes rewritten to recursor form
+con-leche: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+con-leche: accepted 312653 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: 47 inductive blocks modelled in-process: Lean.Syntax, Lean.PersistentHashMap.Node, Lean.Meta.DiscrTree.Trie, Lean.PersistentArrayNode, Lean.PrefixTreeNode, Lean.Json, Lean.MessageData, Lean.Elab.InfoTree, Lean.Language.SnapshotTree, Lean.IR.IRType, Lean.Elab.Tactic.TacticParsedSnapshot, Lean.Meta.Grind.Arith.Linear.RingIneqCnstr, Lean.Meta.Grind.Arith.Linear.RingEqCnstr, Lean.Meta.Grind.Arith.Linear.RingDiseqCnstr, Lean.Meta.Grind.Arith.Linear.EqCnstr, Lean.Meta.Grind.Arith.CommRing.EqCnstr, Lean.Data.Trie, Lean.Doc.Inline, Lean.Doc.Block, Lean.Doc.Part, Lean.Level.PP.Result, Lean.Compiler.LCNF.Alt, Lean.Meta.Grind.Arith.Cutsat.EqCnstr, Lean.Language.Lean.CommandParsedSnapshot, Lean.AsyncList, Lean.Widget.TaggedText, Lean.Widget.MsgEmbed, Lean.Lsp.Ipc.ModuleHierarchy, ProofWidgets.Html, Aesop.IndexingMode, Lean.Elab.Term.Do.Code, Lean.Lsp.DocumentSymbol, Mathlib.Tactic.Translate.ArgReorder, Mathlib.Tactic.Ring.Common.ExBaseNat, Lean.Meta.Match.Pattern, Mathlib.Tactic.Ring.Common.ExBase, Lean.IR.Alt, Lean.Meta.Grind.AC.EqCnstr, Lean.Meta.Grind.AC.DiseqCnstr, Aesop.Frontend.RuleExpr, Lean.Parser.Tactic.MCasesPat, Aesop.Script.StepTree, Lean.Elab.Tactic.RCases.RCasesPatt, Lean.Lsp.Ipc.CallHierarchy, Lean.Meta.Match.Example, Lean.Parser.Tactic.MRefinePat, _private.Lean.Elab.ConfigEval.DeriveEvalConfigItem.0.Lean.Elab.ConfigEval.HandlerTrie (2044 generated records, checked by the fold as declarations and not counted as records of the file)
+con-ron: 62 projection functions of non-direct structure-likes rewritten to recursor form
+con-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul
+con-ron: accepted 312653 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+error: nanoda exited with 137
+Lean default kernel accepts the solution

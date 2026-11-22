@@ -1,0 +1,331 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+# formalization.yaml v0.4.
+version: "v0.4"
+
+project:
+  name: "The Double Midset Conjecture for Metric Continua"
+  description: >-
+    Lean 4 / Mathlib formalization of the paper "The Double Midset Conjecture for Metric
+    Continua" (Lucas Alves de Almeida, 22 November 2026), which proves the Loveland-Wayment conjecture: a nondegenerate compact connected metric space in which every
+    pair of distinct points has exactly two equidistant points is homeomorphic to the circle
+    (Theorem A). Formalized: every definition, lemma, fact (in the form used), proposition,
+    corollary and theorem of Sections 2-12, including Theorems A, B and C, the converse (the
+    Euclidean circle has the DMP), the characterization of the metrizable continua admitting a
+    DMP metric, and the facts that arcs and simple triods are finite trees. Not formalized:
+    figures, remarks and the open questions of Section 13, and R. L. Moore's general theorem
+    behind Fact 2.5 (only its consequence "a dendrite without branch points is an arc" is
+    proved, which is all the paper uses).
+  authors:
+    - "Lucas Alves de Almeida"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Lucas Alves de Almeida"
+
+classification:
+  arxiv: ["math.GN", "math.MG"]
+  msc2020: ["54F15", "54E35", "54F50", "51K05"]
+
+sources:
+  - title: "The Double Midset Conjecture for Metric Continua"
+    authors:
+      - "Lucas Alves de Almeida"
+    type: "paper"
+    location: "https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua (paper/)"
+    relationship: "formalizes"
+    note: >-
+      Not peer reviewed (dated 22 November 2026). Paper version of 22 November 2026; the
+      numbering of Sections 2-12 is that of this version.
+    license: "CC-BY-4.0"
+    author_endorsement: "participated"
+  - title: "Characterizing a curve with the double midset property"
+    authors:
+      - "L. D. Loveland"
+      - "S. G. Wayment"
+    id: "doi:10.1080/00029890.1974.11993716"
+    type: "paper"
+    location: "Amer. Math. Monthly 81 (1974), 1003-1006"
+    relationship: "background"
+    note: "Source of the conjecture (1974)."
+    license: "unknown"
+    author_endorsement: "not-contacted"
+
+related_formalizations: []
+
+status:
+  scope: >-
+    Formalized and Comparator-checked: the 47 statements listed under alignment (Lean kernel and
+    nanoda). Not formalized: figures, remarks, Section 13 questions, and Moore's general
+    characterization of the arc and the circle (Fact 2.5 is formalized in the consequence form
+    the paper uses).
+  # 0 in the library and Solution.lean. Challenge.lean has one `sorry` per compared statement
+  # (47), which is the statement-file convention.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: []
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["Claude Opus 5.5"]
+      framework: "Claude (Anthropic) agent sessions with file and shell tools"
+      tool_setup: >-
+        All Lean code was written by the model in agent sessions of 2026-11-21 and 2026-11-22,
+        compiled with Lake in a Linux cloud container (Lean v4.35.0-rc2, Mathlib at tag
+        v4.35.0-rc2). After each batch of files a fresh agent without memory of the work reviewed
+        every line (reports/reviews); a final fresh agent compared every statement with the paper.
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "cloud container"
+      prompting_notes: >-
+        The human author asked for a full formalization of every lemma, theorem and statement
+        (examples excluded), with special attention to Theorems A, B and C, formalizing any
+        needed result missing from Mathlib, in the style of a previous Palomar entry, with
+        independent agent review of each file and Comparator, nanoda, con-ron and paranoid
+        checks.
+  spend_usd: "not tracked"
+  notes: >-
+    The Lean statements and proofs were produced by Claude Opus 5.5. The human author has not
+    written or reviewed Lean code.
+
+fidelity:
+  divergences: >-
+    (1) Vertices, open edges and edges of a finite tree are defined intrinsically (tips and
+    branch points; components of the complement of the vertices; their closures); Lemma 2.7
+    proves these have the paper's properties. (2) Orders are ℕ∞-valued and midset sizes use
+    Set.encard. (3) Crossings and touches (Def. 5.3) are defined via an open arc J around the
+    zero inside an open edge. (4) "Strictly monotone along an arc" is stated as injectivity on the
+    arc (Lemma 6.2(a), Prop. 8.2(a)), equivalent for continuous functions on arcs. (5) Lemma 7.3
+    is stated with an explicit parametrization of the edge. (6) Definition 9.1 (used pairs) is
+    stated intrinsically by comparing h_e(a) with h_e(v). (7) Theorems 10.1 and 11.1 are derived
+    as corollaries of Theorem B together with "arcs and simple triods are finite trees"; inside
+    the library the paper's arguments of Sections 10 and 11 are carried out for branched and
+    unbranched finite trees. (8) Several proofs deviate in technique (e.g. Lemma 7.1 uses
+    max(f, delta - d(x, .)) instead of cutting the tree; Prop. 6.5 replaces Hausdorff continuity by
+    a unique-zero continuity lemma); see the review reports.
+
+review:
+  status: "self-assessed by the AI system that wrote the code; no human review"
+  reviewers:
+    - "none"
+  notes: >-
+    No human has audited the Lean statements. Fresh Claude agents reviewed each batch of files and
+    compared all statements with the paper; see reports/. That is an AI review, not an independent
+    human one.
+
+alignment:
+  namespace: "DoubleMidset"
+  statements:
+    - source: "Lemma 2.2 (a)"
+      lean: "DoubleMidset.Paper.lemma_2_2_a"
+      module: "Solution"
+      status: "proved"
+      note: "(protected signs)."
+    - source: "Lemma 2.2 (b)"
+      lean: "DoubleMidset.Paper.lemma_2_2_b"
+      module: "Solution"
+      status: "proved"
+      note: "(counting zeros)."
+    - source: "Fact 2.3 (D1)"
+      lean: "DoubleMidset.Paper.fact_2_3_D1"
+      module: "Solution"
+      status: "proved"
+      note: ": in a dendrite, any two distinct points of a connected set are joined by an arc inside it."
+    - source: "Fact 2.3 (D2)"
+      lean: "DoubleMidset.Paper.fact_2_3_D2"
+      module: "Solution"
+      status: "proved"
+      note: ": in a dendrite, the intersection of two connected sets is connected, and arcs are unique."
+    - source: "Fact 2.3 (D3)"
+      lean: "DoubleMidset.Paper.fact_2_3_D3"
+      module: "Solution"
+      status: "proved"
+      note: ": every subcontinuum of a dendrite is a dendrite."
+    - source: "Fact 2.3 (D4)"
+      lean: "DoubleMidset.Paper.fact_2_3_D4"
+      module: "Solution"
+      status: "proved"
+      note: ": components of open subsets of a dendrite are open."
+    - source: "Lemma 2.4 (interior points of arcs separate)"
+      lean: "DoubleMidset.Paper.lemma_2_4"
+      module: "Solution"
+      status: "proved"
+    - source: "Fact 2.5"
+      lean: "DoubleMidset.Paper.fact_2_5"
+      module: "Solution"
+      status: "proved"
+      note: ", the consequence used in the paper: a dendrite without branch points is an arc. (R. L. Moore's characterization of the arc and the circle is not formalized in general.)"
+    - source: "Lemma 2.7 (structure of finite trees)"
+      lean: "DoubleMidset.Paper.lemma_2_7"
+      module: "Solution"
+      status: "proved"
+      note: "The vertex set is finite and `T` is the union of finitely many edges; each edge is an arc joining two vertices and containing no other vertex; two edges meet at most in a common end; there are `|V| - 1` edges; the degree of a vertex is the number of edges containing it."
+    - source: "The paragraph after Lemma 2.7"
+      lean: "DoubleMidset.Paper.tree_facts"
+      module: "Solution"
+      status: "proved"
+      note: ": open edges are open; every edge point has order two; `|Odd|` is even; in a branched tree every edge contains a branch point (necessarily one of its ends); and the tip formula (3) `t = 2 + ∑_{branch points} (deg u - 2)`."
+    - source: "Lemma 2.8 (i)"
+      lean: "DoubleMidset.Paper.lemma_2_8_i"
+      module: "Solution"
+      status: "proved"
+      note: ": a real function has countably many local extremum values."
+    - source: "Lemma 2.8 (ii)"
+      lean: "DoubleMidset.Paper.lemma_2_8_ii"
+      module: "Solution"
+      status: "proved"
+      note: ": if `g` is continuous on `(α, β)` and constant on no nondegenerate subinterval, its local extrema in `(α, β)` form a meagre set."
+    - source: "Lemma 2.8 (iii)"
+      lean: "DoubleMidset.Paper.lemma_2_8_iii"
+      module: "Solution"
+      status: "proved"
+      note: ": near a point which is not a local extremum there are smaller and larger values."
+    - source: "Lemma 2.9 (grid lemma)"
+      lean: "DoubleMidset.Paper.lemma_2_9"
+      module: "Solution"
+      status: "proved"
+    - source: "Proposition 3.1 (finite midsets force local connectedness)"
+      lean: "DoubleMidset.Paper.prop_3_1"
+      module: "Solution"
+      status: "proved"
+    - source: "Proposition 3.2 (simple closed curves)"
+      lean: "DoubleMidset.Paper.prop_3_2"
+      module: "Solution"
+      status: "proved"
+      note: "Under the upper bound, a simple closed curve in `X` is all of `X`."
+    - source: "Corollary 3.4"
+      lean: "DoubleMidset.Paper.cor_3_4"
+      module: "Solution"
+      status: "proved"
+      note: "A nondegenerate compact connected metric space with the DMP is a simple closed curve or a dendrite."
+    - source: "Lemma 4.2 (arms)"
+      lean: "DoubleMidset.Paper.lemma_4_2"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 4.3 (radial monotonicity)"
+      lean: "DoubleMidset.Paper.lemma_4_3"
+      module: "Solution"
+      status: "proved"
+      note: "Along an arc issuing from a branch point `c`, the distance from `c` is nondecreasing."
+    - source: "Lemma 4.4 (order at most four)"
+      lean: "DoubleMidset.Paper.lemma_4_4"
+      module: "Solution"
+      status: "proved"
+    - source: "Theorem 4.5 (few branch points)"
+      lean: "DoubleMidset.Paper.theorem_4_5"
+      module: "Solution"
+      status: "proved"
+    - source: "Corollary 4.6"
+      lean: "DoubleMidset.Paper.cor_4_6"
+      module: "Solution"
+      status: "proved"
+      note: "A dendrite with `|M(a, b)| ≤ 2` for all distinct `a, b` is a finite tree."
+    - source: "Equation (5)"
+      lean: "DoubleMidset.Paper.eq_5_2"
+      module: "Solution"
+      status: "proved"
+      note: ": for a strict pair, `N(a, b) ≡ N(b, a) (mod 2)`."
+    - source: "Lemma 5.4 (parity)"
+      lean: "DoubleMidset.Paper.lemma_5_4"
+      module: "Solution"
+      status: "proved"
+    - source: "Corollary 5.5 (two types of strict pairs)"
+      lean: "DoubleMidset.Paper.cor_5_5"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 5.6 (stability of a touch)"
+      lean: "DoubleMidset.Paper.lemma_5_6"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 6.2 (spherical arcs)"
+      lean: "DoubleMidset.Paper.lemma_6_2"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 6.3 (off-sphere parity)"
+      lean: "DoubleMidset.Paper.lemma_6_3"
+      module: "Solution"
+      status: "proved"
+    - source: "Proposition 6.5 (odd boxes lie on a sphere)"
+      lean: "DoubleMidset.Paper.prop_6_5"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 6.6 (continuous selection of the touch)"
+      lean: "DoubleMidset.Paper.lemma_6_6"
+      module: "Solution"
+      status: "proved"
+    - source: "Corollary 6.7"
+      lean: "DoubleMidset.Paper.cor_6_7"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 7.1 (tips are not centers)"
+      lean: "DoubleMidset.Paper.lemma_7_1"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 7.2 (the center is a crossing)"
+      lean: "DoubleMidset.Paper.lemma_7_2"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 7.3 (matching beyond the center)"
+      lean: "DoubleMidset.Paper.lemma_7_3"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 7.4 (no center in the arc's own edge)"
+      lean: "DoubleMidset.Paper.lemma_7_4"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 8.1 (no flip at a tip)"
+      lean: "DoubleMidset.Paper.lemma_8_1"
+      module: "Solution"
+      status: "proved"
+    - source: "Proposition 8.2 (a)"
+      lean: "DoubleMidset.Paper.prop_8_2_a"
+      module: "Solution"
+      status: "proved"
+      note: ": the distance from a tip is injective (equivalently, strictly monotone) on every edge."
+    - source: "Proposition 8.2 (b)"
+      lean: "DoubleMidset.Paper.prop_8_2_b"
+      module: "Solution"
+      status: "proved"
+    - source: "Lemma 9.2 (distinct tips use disjoint pairs)"
+      lean: "DoubleMidset.Paper.lemma_9_2"
+      module: "Solution"
+      status: "proved"
+    - source: "Proposition 9.3 (reduction to the triod)"
+      lean: "DoubleMidset.Paper.prop_9_3"
+      module: "Solution"
+      status: "proved"
+    - source: "Theorem 10.1"
+      lean: "DoubleMidset.Paper.theorem_10_1"
+      module: "Solution"
+      status: "proved"
+      note: "No compatible metric on a simple triod has the DMP."
+    - source: "Theorem 11.1"
+      lean: "DoubleMidset.Paper.theorem_11_1"
+      module: "Solution"
+      status: "proved"
+      note: "No compatible metric on an arc has the DMP."
+    - source: "Theorem A"
+      lean: "DoubleMidset.Paper.theorem_A"
+      module: "Solution"
+      status: "proved"
+      note: "A nondegenerate compact connected metric space with `|M(a, b)| = 2` for all distinct `a, b` is homeomorphic to `S¹`."
+    - source: "Theorem A, converse"
+      lean: "DoubleMidset.Paper.circle_hasDMP"
+      module: "Solution"
+      status: "proved"
+      note: "The unit circle with the Euclidean metric has the DMP."
+    - source: "Theorem A, characterization"
+      lean: "DoubleMidset.Paper.theorem_A_iff"
+      module: "Solution"
+      status: "proved"
+      note: "A nondegenerate metrizable continuum admits a compatible metric with the DMP if and only if it is a simple closed curve."
+    - source: "Theorem B"
+      lean: "DoubleMidset.Paper.theorem_B"
+      module: "Solution"
+      status: "proved"
+      note: "No finite tree admits a compatible metric with the DMP. In particular, neither an arc nor a simple triod does."
+    - source: "Theorem C"
+      lean: "DoubleMidset.Paper.theorem_C"
+      module: "Solution"
+      status: "proved"
+      note: "A dendrite with `|M(a, b)| ≤ 2` for all distinct `a, b`: every point has order at most four; for a branch point of order `m`, `(m - 2)(|B| - 1) ≤ m`; there are at most four branch points; and it is a finite tree."
