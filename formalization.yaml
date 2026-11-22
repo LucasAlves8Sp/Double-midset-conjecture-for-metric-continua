@@ -29,8 +29,9 @@ sources:
   - title: "The Double Midset Conjecture for Metric Continua"
     authors:
       - "Lucas Alves de Almeida"
+    id: "doi:10.5281/zenodo.24447758"
     type: "paper"
-    location: "https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua (paper/)"
+    location: "Zenodo preprint, 22 November 2026; also https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua (paper/)"
     relationship: "formalizes"
     note: >-
       Not peer reviewed (dated 22 November 2026). Paper version of 22 November 2026; the
