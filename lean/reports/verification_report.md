@@ -93,3 +93,13 @@ full `verify_all.sh` run was not repeated on this hash.
   `Challenge`, axiom audit. In the sandboxed verification job the runner received a shutdown
   signal during step 05 (`lake check --paranoid` on the whole export) after 14 minutes, and no
   logs artifact was uploaded. So that job establishes nothing about steps 03–09.
+
+## Addendum — sandboxed CI run (2026-11-23)
+
+GitHub Actions run 45127914972 (`main`, commit `0c313b7`) ran `scripts/verify_all.sh` with
+bubblewrap and `SKIP_FULL_EXPORT_PARANOID=1`. Results: 00–02 passed; 03 `lake comparator` 0;
+04 `lake check` 0; 05 not run (whole-export paranoid replay, too much memory for the runner);
+06 `lake comparator --paranoid` 0; 07 Palomar-style run with nanoda and con-ron 0; 08 and 09
+rejected with the expected messages. Earlier CI failures came from two causes: the runner ran
+out of resources in step 05, and the toolchain's `bin/` was not on PATH, so Comparator could not
+find `nanoda_bin`.
