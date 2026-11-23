@@ -52,6 +52,8 @@ jobs:
           sudo apt-get update -qq >/dev/null
           sudo apt-get install -y -qq bubblewrap >/dev/null
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Put the toolchain's own bin/ on PATH (comparator looks up nanoda_bin there)
+        run: echo "$(lean --print-prefix)/bin" >> "$GITHUB_PATH"
       - name: Run every verification step (sandboxed)
         # The paranoid replay of the whole export (step 05, ~312,000 declarations including
         # Mathlib) runs nanoda out of memory on a standard runner, so it is skipped here and
