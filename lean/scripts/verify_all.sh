@@ -10,6 +10,11 @@
 # ALLOW_NO_SANDBOX=1 are the same steps additionally run with `--inadvisably-no-sandbox`; those
 # steps carry the suffix "-NOSANDBOX" in their names and must never be reported as sandboxed runs.
 #
+# SKIP_FULL_EXPORT_PARANOID=1 records step 05 (`lake check --paranoid`, which replays the whole
+# export of about 312,000 declarations, Mathlib included, through every kernel) as not-run. Use it
+# only on machines with too little memory for nanoda on that export (about 8-16 GB is not enough).
+# Step 06 still replays the closure of the compared theorems through every kernel.
+#
 # Each step writes <out>/<step>.log and one line to <out>/steps.tsv:
 #   step <TAB> exit code <TAB> seconds <TAB> command
 # Nothing is ever recorded as passed unless its command exited 0. The negative controls are
@@ -105,7 +110,11 @@ cfg=$(mktemp); palomar_cfg "$cfg"
 if command -v bwrap >/dev/null 2>&1; then
   run 03-comparator lake comparator --config comparator.json
   run 04-check lake check
-  run 05-check-paranoid lake check --paranoid
+  if [ "${SKIP_FULL_EXPORT_PARANOID:-0}" = 1 ]; then
+    skip 05-check-paranoid "SKIP_FULL_EXPORT_PARANOID=1: the paranoid replay of the whole export (Mathlib included) needs more memory than the machine has"
+  else
+    run 05-check-paranoid lake check --paranoid
+  fi
   run 06-comparator-paranoid lake comparator --config comparator.json --paranoid
   run 07-palomar-local lake comparator --config "$cfg"
   negative_controls "" --config comparator.json

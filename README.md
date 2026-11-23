@@ -78,7 +78,7 @@ where `HasDMP X` means `(midset a b).encard = 2` for all `a ≠ b`, `midset a b 
 | negative controls (a `sorry` in `Solution.lean`; an altered definition in `Challenge.lean`) | both rejected, as they should be |
 | Palomar's mechanical verification (sandboxed, Lean kernel and nanoda) | [passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45061350900) on 22 November 2026 |
 
-The local runs were unsandboxed, because bubblewrap was not available where the code was written. Palomar's verification above is the sandboxed Comparator run. The [CI workflow](.github/workflows/ci.yml) runs the whole suite sandboxed on GitHub Actions; its first complete attempt (22 November 2026) built the project and passed the static checks and the axiom audit, but the runner was shut down during `lake check --paranoid` on the whole export, so that run gives no result for the later steps.
+The local runs were unsandboxed, because bubblewrap was not available where the code was written. Palomar's verification above is the sandboxed Comparator run. The [CI workflow](.github/workflows/ci.yml) runs the suite sandboxed on GitHub Actions, except `lake check --paranoid` on the whole export: replaying all ~312,000 declarations (Mathlib included) through nanoda exceeds a standard runner's memory, as it did here (two CI attempts on 22 November 2026 were shut down at that step). CI records that step as not run; the paranoid replay of the closure of the 47 compared theorems through every kernel (`lake comparator --paranoid`) still runs.
 
 ## Building
 
