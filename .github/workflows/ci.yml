@@ -65,8 +65,13 @@ jobs:
           bash scripts/verify_all.sh
           status=$?
           set -e
-          steps=$(ls -d logs/verify-*/ | tail -1)steps.tsv
+          dir=$(ls -d logs/verify-*/ | tail -1)
+          steps=${dir}steps.tsv
           echo "verify_all.sh exit status: $status"
+          # Show the end of the log of every step that did not exit 0 (negative controls included).
+          awk -F'\t' '$2 != "0" && $2 != "not-run" {print $1}' "$steps" | while read -r s; do
+            echo "::group::log of $s"; tail -n 40 "${dir}${s}.log"; echo "::endgroup::"
+          done
           if [ "$status" = 2 ]; then
             notrun=$(awk -F'\t' '$2 == "not-run" {print $1}' "$steps")
             if [ "$notrun" = "05-check-paranoid" ]; then
